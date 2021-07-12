@@ -1,8 +1,8 @@
 const books= document.getElementById('result-set');
 const form= document.getElementById('books-form');
-const title= document.getElementById('booktitle');
-const author= document.getElementById('bookauthor');
-const addBtn= document.getElementById('Submitbtn');
+const title= document.getElementById('book-title');
+const author= document.getElementById('book-author');
+const addBtn= document.getElementById('Submit-btn');
 
 let formData={
   title:'',
@@ -19,7 +19,7 @@ class BookCollection {
       this.collection =  JSON.parse(localStorage.getItem('bookdata'));
       this.collection.unshift(formData);
       localStorage.setItem('bookdata', JSON.stringify(this.collection));
-      this.showBooks(this.collection);
+      this.showBooks(this.BookCollection);
     } else {
       localStorage.setItem('bookdata', JSON.stringify([formData]))
       showBooks( JSON.parse(localStorage.getItem('bookdata')));
@@ -31,7 +31,7 @@ class BookCollection {
   showBooks(arr) {
   const htmlCode = arr.map((book) => `
     <li>
-      <span>"${book.title}" by &nbsp;</span>
+      <span>"${book.book}" by &nbsp;</span>
       <span class="author">${book.author}</span>
       <button type="button" data-id="${book.id}">Remove</button>
     </li>
@@ -70,7 +70,7 @@ formInputs.forEach((input) => {
   })
 })
 
-form.addEventListener('submit', (evt) => {
+form.addEventListener('button', (evt) => {
   evt.preventDefault();
   library.addBook();
 })
