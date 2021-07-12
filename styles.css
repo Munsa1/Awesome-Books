@@ -1,4 +1,3 @@
 body {
-    display: flex;
-    flex-direction: column;
+    background-color: rgb(255, 250, 250);
 }
