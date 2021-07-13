@@ -14,7 +14,7 @@ const removeBook = (ev) => {
   localStorage.setItem('bookObject', JSON.stringify(books));
   document.getElementById('Result').innerHTML = `${books.map(BookList).join('')}`;
 };
-//Add Form data to Unordered List
+// Add Form data to Unordered List
 const addBooks = (ev) => {
   ev.preventDefault();
   i += 1;
@@ -40,7 +40,8 @@ window.onload = () => {
   if (data) {
     books = data;
   }
-  document.getElementById('Result').innerHTML = `${books.map(ListBooks).join('')}`;
+
+  document.getElementById('Result').innerHTML = `${books.map(BookList).join('')}`;
   document.getElementById('Result').addEventListener('click', (e) => {
     if (e.target.classList.contains('remove-button')) {
       removeBook(e);
