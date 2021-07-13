@@ -1,35 +1,50 @@
-let myBooks = []
-let k = 0;
+let books = [];
+let i = 0;
 
-function bookList (book){
+function BookList(b) {
   return `
-  <li>${book.title}</li>
-  <li>${book.author}</li>
-  <button type='button' id='${book.id}' class='remove-button'>Remove</button>`;
+    <li>${b.title}</li>
+    <li>${b.author}</li>
+    <button type='button' id='${b.id}' class='remove-button'>Remove</button>`;
 }
 
 const removeBook = (ev) => {
   const buttonId = ev.target.id;
   books = books.filter((y) => y !== books[books.findIndex((x) => x.id === parseInt(buttonId, 10))]);
   localStorage.setItem('bookObject', JSON.stringify(books));
-  document.getElementById('result-set').innerHTML = `${books.map(listBooks).join('')}`;
+  document.getElementById('Result').innerHTML = `${books.map(BookList).join('')}`;
 };
-
+//Add Form data to Unordered List
 const addBooks = (ev) => {
   ev.preventDefault();
-  k = k + 1;
+  i += 1;
   const book = {
-    id: k,
-    title: document.getElementById('book-title').value,
-    author: document.getElementById('book-author').value,
+    id: i,
+    title: document.getElementById('bookTitle').value,
+    author: document.getElementById('bookAuthor').value,
   };
   books.push(book);
   localStorage.setItem('bookObject', JSON.stringify(books));
-  document.getElementById('bookList').innerHTML = `${books.map(listBooks).join('')}`;
-  document.getElementById('bookList').addEventListener('click', (e) => {
+  document.getElementById('Result').innerHTML = `${books.map(BookList).join('')}`;
+  document.getElementById('Result').addEventListener('click', (e) => {
     if (e.target.classList.contains('remove-button')) {
       removeBook(e);
     }
   });
-  document.getElementById('addBooks').reset();
+  document.getElementById('BooksForm').reset();
 };
+
+window.onload = () => {
+  const dataGet = localStorage.getItem('bookObject');
+  const data = JSON.parse(dataGet);
+  if (data) {
+    books = data;
+  }
+  document.getElementById('Result').innerHTML = `${books.map(ListBooks).join('')}`;
+  document.getElementById('Result').addEventListener('click', (e) => {
+    if (e.target.classList.contains('remove-button')) {
+      removeBook(e);
+    }
+  });
+};
+document.getElementById('submit').addEventListener('click', addBooks);
