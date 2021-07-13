@@ -31,7 +31,8 @@ const addBooks = (ev) => {
       removeBook(e);
     }
   });
-  document.getElementById('BooksForm').reset();
+  document.getElementById('booksForm').reset();
+  console.log(book.id)
 };
 
 window.onload = () => {
@@ -47,5 +48,6 @@ window.onload = () => {
       removeBook(e);
     }
   });
+  i= books[books.length-1].id
 };
 document.getElementById('submit').addEventListener('click', addBooks);
