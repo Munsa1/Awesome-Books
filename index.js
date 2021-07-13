@@ -34,7 +34,7 @@ const addBooks = (ev) => {
   document.getElementById('BooksForm').reset();
 };
 
-DomContentLoaded = () => {
+window.onload = () => {
   const dataGet = localStorage.getItem('bookObject');
   const data = JSON.parse(dataGet);
   if (data) {
