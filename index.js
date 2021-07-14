@@ -36,6 +36,28 @@ class BookList {
     return li;
   }
 }
+const library = new BookList()
+
+window.addEventListener("load", () => {
+ const form = document.getElementById('booksForm')
+ form.addEventListener('submit', (event) => {
+   event.preventDefault()
+   const title = document.getElementById('bookTitle');
+   const author = document.getElementById('bookAuthor');
+   const book = {
+     title: title.value,
+     author: author.value,
+     id: Date.now(),
+
+   }
+   library.addBook(book);
+  })
+  const books = localStorage.getItem('books');
+  if(books){
+    library.list = JSON.parse(books); 
+  }
+  library.displayBooks();
+ })
 
   // function BookList(b) {
   //   return `
