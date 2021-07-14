@@ -1,13 +1,20 @@
 let books = [];
 let i = 0;
 
-class BookList{
-    constructor() {
-      this.list = [];
-    }
+class BookList {
+  constructor() {
+    this.list = [];
+  }
 }
 
-
+ListOfBooks = (arr) => {
+  const BookList = arr.map((b) =>
+<li>${b.title}</li>
+<li>${b.author}</li>
+<button type='button' id='${b.id}' class='remove-button'>Remove</button>`).join('');
+document.getElementById('bookList').innerHTML = listBook;
+}
+ 
 
 
 
