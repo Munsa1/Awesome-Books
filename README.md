@@ -38,8 +38,9 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 ---
 
--Web browser
--Html text editor
+- Web browser
+
+- Html text editor
 
 
 ## Authors:
@@ -55,7 +56,7 @@ GitHub: [@Munsa1](https://github.com/munsa1)
 
 👤 **Author2**
 
- Github:[Sheyla Pozo](https://github.com/sheylaPozo)
+ Github:[@SheylaPozo](https://github.com/sheylaPozo)
 - Linkedin: [Sheyla Pozo](https://www.linkedin.com/in/sheypozo/)
 - Twitter: [Sheyla Pozo](https://twitter.com/sheyPozo)
 
