@@ -1,26 +1,33 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+---
 
 # Project Name
 Awsome Books library
+---
 
 > One paragraph statement about the project.
 
-![screenshot](127.0.0.1_5501_index.html.png)
+![Demo](./images/Screenshoot1.png)
+
+---
 
 Additional description about the project and its features.
 
 ## Built With
+---
 
 - Html
 - Css
 - Javascript
 
 ## Live Demo
+---
 
 [Live Demo Link](https://munsa1.github.io/Awesome-Books/)
 
 
 ## Getting Started
+---
 
 **This is an example of how you may give instructions on setting up your project locally.**
 **Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
@@ -29,12 +36,14 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+---
 
 -Web browser
 -Html text editor
 
 
-## Authors
+## Authors:
+---
 
 👤 **Author1**
 
