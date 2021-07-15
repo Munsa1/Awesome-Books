@@ -7,7 +7,7 @@ Awsome Books library
 
 > Thi project is about a book library implemented using javascript and html wiht css.
 
-![Demo](./images/Screenshoot1.png)
+![Demo](./images/screen.png)
 
 ---
 
