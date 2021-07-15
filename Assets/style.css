@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Niconne', cursive;
+  font-size: 30px;
+}
+
+body{
+  text-align: center;
+  margin-top: 3%;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+h2 {
+  margin-top: 1.7em;
+  padding: 0%;
+}
+
+.text {
+  display: flex;
+}
+
+ul {
+  border: 1px rgba(0, 0, 0, 0.973);
+  margin: 0 14px;
+}
+
+li {
+  list-style: none;
+  padding: 6px;
+  font-size: 26px;
+  font-weight: 500;
+  background-color: rgb(118, 163, 231);
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+p {
+  padding: 4px;
+}
+
