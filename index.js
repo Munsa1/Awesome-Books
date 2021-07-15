@@ -33,7 +33,7 @@ class BookList {
     author.innerText = book.author;
     removeBtn.innerText = 'remove';
     title.classList.add('title');
-    li.appendChild(title);
+    li.appendChild(title).classList.toggle('title');
     li.appendChild(author);
     li.appendChild(removeBtn);
     return li;
