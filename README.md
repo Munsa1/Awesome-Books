@@ -5,7 +5,7 @@
 Awsome Books library
 ---
 
-> One paragraph statement about the project.
+> Thi project is about a book library implemented using javascript and html wiht css.
 
 ![Demo](./images/Screenshoot1.png)
 
@@ -72,10 +72,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to Usman Sulieman
 - Inspiration
 - etc
 
-## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
