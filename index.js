@@ -22,23 +22,22 @@ class BookList {
       result.appendChild(this.bookElement(book));
     });
   }
-}
 
-bookElement(book) {
-  const li = document.createElement('li');
-  const title = document.createElement('h5');
-  const author = document.createElement('h5');
-  const removeBtn = document.createElement('button');
-  removeBtn.addEventListener('click', () => this.removeBook(book.id));
-  title.innerText = book.title;
-  author.innerText = book.author;
-  removeBtn.innerText = 'remove';
-  title.classList.add('title');
-  li.appendChild(title);
-  li.appendChild(author);
-  li.appendChild(removeBtn);
-  return li;
-}
+  bookElement(book) {
+    const li = document.createElement('li');
+    const title = document.createElement('h5');
+    const author = document.createElement('h5');
+    const removeBtn = document.createElement('button');
+    removeBtn.addEventListener('click', () => this.removeBook(book.id));
+    title.innerText = book.title;
+    author.innerText = book.author;
+    removeBtn.innerText = 'remove';
+    title.classList.add('title');
+    li.appendChild(title);
+    li.appendChild(author);
+    li.appendChild(removeBtn);
+    return li;
+  }
 }
 const library = new BookList();
 
@@ -62,4 +61,3 @@ window.addEventListener('load', () => {
   }
   library.displayBooks();
 });
-
