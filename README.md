@@ -64,7 +64,7 @@ GitHub: [@Munsa1](https://github.com/munsa1)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Munsa1/Awesome-Books/issues)
 
 ## Show your support
 
