@@ -4,7 +4,7 @@
   padding: 0%;
   margin: 0%;
   font-family: 'Niconne', cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 body {
@@ -36,14 +36,18 @@ ul {
 
 li {
   list-style: none;
-  padding: 6px;
+  padding: 23px;
   font-size: 26px;
   font-weight: 500;
   background-color: rgb(118, 163, 231);
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 50% -50%;
+}
+
+.title {
+  margin: 26px;
 }
 
 p {
-  padding: 8px;
+  padding: 4px;
 }
