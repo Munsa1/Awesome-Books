@@ -109,3 +109,31 @@ links.forEach((link) => {
     
   })
 });
+
+function getNumberSuffix(num) {
+    const th = 'th'
+    const rd = 'rd'
+    const nd = 'nd'
+    const st = 'st'
+  
+    if (num === 11 || num === 12 || num === 13) return th
+  
+    let lastDigit = num.toString().slice(-1)
+  
+    switch (lastDigit) {
+      case '1': return st
+      case '2': return nd
+      case '3': return rd
+      default:  return th
+    }
+  }
+  
+  setInterval(()=>{
+    let DateTime = luxon.DateTime;
+    let today = DateTime.local();
+    let modified=today.toLocaleString({...DateTime.DATETIME_MED_WITH_SECONDS, month:'long',}).split(" ");
+    let dateNum=parseInt(modified[1]);
+    modified[1]=dateNum+getNumberSuffix(dateNum);
+    date.innerHTML=modified.join(" ");
+  }, 1000)
+  
