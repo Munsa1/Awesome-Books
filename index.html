@@ -9,28 +9,63 @@
   <link href="./Assets/reset.css" rel="stylesheet">
 </head>
 <body>
-<header>
-  <nav>
-    <div>
-      
-    </div>
-  </nav>
-</header>
+  <header id="header">
+    <nav class="navbar">
+      <di>
+        <a href="#">Awesome Books</a>
+        <ul class="navbar">
+          <li class="nav-item">
+            <a href="#">List</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Add new</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        </div>
+    </nav>
+  </header>
+  <p id="date"></p>
   <main>
-    <ul id="Result">
-    </ul>
-    <h1>Awesome Books</h1>
-    <form id="booksForm">
-      <input type="text" id="bookTitle" placeholder="Title" />
-      <br><br>
-      <input type="text" id="bookAuthor" placeholder="Author" />
-      <br>
-      <br>
-      <button type="submit" id="submit">
-      Save Book
-      </button>
-    </form>
+    <section id="index" class="tab">
+      <h2 class="title">Awesome Books Tracker</h2>
+      <div id="collection" class="collection"></div>
+    </section>
+    <section id="add-book" class="add-book tab">
+      <h2 class="title">Add a New Book</h2>
+      <div id="bookAdderForm" class="bookAdder">
+        <ul id="Result">
+        </ul>
+        <h1>Awesome Books</h1>
+        <form id="booksForm">
+          <input type="text" id="bookTitle" placeholder="Title" />
+          <br><br>
+          <input type="text" id="bookAuthor" placeholder="Author" />
+          <br>
+          <br>
+          <button type="submit" id="submit">
+            Save Book
+          </button>
+        </form>
+      </div>
+    </section>
+    <section id="contact" class="section tab">
+      <h1 class="title">Contact information</h1>
+      <div class="contact-text"></div>
+      <p>Do you have any questions?</p>
+      <p>Reach out to us!</p>
+      <ul class="contact-list">
+        <li>Our e-mail: tofindoutyeah@gmail.com</li>
+        <li>Our phone number: 0019555555555</li>
+        <li>Our address Huntsville, AR 72740, USA</li>
+      </ul>
+    </section>
   </main>
+  <footer>
+    <p> Copyright 2021 - Created by Munsa & Sheyla Pozo </p>
+  </footer>
   <script src="index.js"></script>
 </body>
 </html>
