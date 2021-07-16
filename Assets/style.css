@@ -51,3 +51,7 @@ li {
 p {
   padding: 4px;
 }
+
+.select {
+  color: rgb(52, 155, 144);
+}
