@@ -5,6 +5,8 @@ tabs.forEach((tab) => {
      tab.preventDefault();
      document.querySelector('select').classList.remove('select')
      tab.classList.add('select');
-     const iD = tab.getAttribute('href').slice('1')
+     const iD = tab.getAttribute('href').slice('1');
+     const selectedSection = document.querySelector('selected-tab');
+     
      });
 });
