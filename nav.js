@@ -7,6 +7,14 @@ tabs.forEach((tab) => {
      tab.classList.add('select');
      const iD = tab.getAttribute('href').slice('1');
      const selectedSection = document.querySelector('selected-tab');
-     
-     });
+
+     if (selectedSection){
+         selectedSection.classList.remove('selected-tab');
+     }
+
+     const section = document.getElementById(iD);
+     if (section){
+         section.classList.add('selected-tab');
+        }
+    });
 });

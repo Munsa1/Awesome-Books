@@ -9,64 +9,50 @@
   <link href="./Assets/reset.css" rel="stylesheet">
 </head>
 <body>
-  <header id="header">
-    <nav class="navbar">
-      <di>
-        <a href="#">Awesome Books</a>
-        <ul class="navbar">
-          <li class="nav-item select">
-            <a href="#">List</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Add new</a>
-          </li>
-          <li class="nav-item">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-        </div>
+  <header>
+    <nav class="navigation">
+      <span class="logo">Awesome books</span>
+      <ul class="menu" id="menu">
+        <li data-id="list" class="active">List</li>
+        <li data-id="add-new" >Add new</li>
+        <li data-id="contact">Contact</li>
+      </ul>  
     </nav>
+    <div class="date" id="date"></div>
   </header>
-  <p id="date"></p>
-  <main>
-    <section id="index" class="tab selected-tab">
-      <h2 class="title">Awesome Books Tracker</h2>
-      <div id="collection" class="collection"></div>
-    </section>
-    <section id="add-book" class="add-book tab">
-      <h2 class="title">Add a New Book</h2>
-      <div id="bookAdderForm" class="bookAdder">
-        <ul id="Result">
-        </ul>
-        <h1>Awesome Books</h1>
-        <form id="booksForm">
-          <input type="text" id="bookTitle" placeholder="Title" />
-          <br><br>
-          <input type="text" id="bookAuthor" placeholder="Author" />
-          <br>
-          <br>
-          <button type="submit" id="submit">
-            Save Book
-          </button>
-        </form>
-      </div>
-    </section>
-    <section id="contact" class="section tab">
-      <h1 class="title">Contact information</h1>
-      <div class="contact-text"></div>
-      <p>Do you have any questions?</p>
-      <p>Reach out to us!</p>
-      <ul class="contact-list">
-        <li>Our e-mail: tofindoutyeah@gmail.com</li>
-        <li>Our phone number: 0019555555555</li>
-        <li>Our address Huntsville, AR 72740, USA</li>
+  <section class="list show" id="list">
+    <h2>All awesome books</h2>
+      <ul class='books' id='books'>
       </ul>
-    </section>
-  </main>
-  <footer>
-    <p> Copyright 2021 - Created by Munsa & Sheyla Pozo </p>
+  </section>
+
+  <section id="add-new" class="add-new">
+    <h2>Add a new book</h2>
+    <form id="add-form" class="add-form">
+      <input type="text" name="title" id="title" placeholder="Title" autocomplete="off" required>
+      <input type="text" name="author" id="author" placeholder="Author" autocomplete="off" required>
+      <button type="submit">Add</button>
+      <span class='error-msg' id='error-msg'></span>
+    </form>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact information</h2>
+    <p>Do you have any questions or you just want to say "Hello"?</p>
+    <p>You can reach out to us!</p>
+    <ul>
+      <li>Our email: <a href="mailto:support@awesomebooks.com">support@awesomebooks.com</a></li>
+      <li>Our phone number: <a href="tel:0013586534422">0013586534422</a></li>
+      <li>Our address: Wall Street 77, 84503 New York, USA</li>
+    </ul>
+  </section>
+  
+  
+  <footer class="footer">
+    &copy; 2021 <a href="https://github.com/toliboff">toliboff</a>
   </footer>
-  <script src="index.js"></script>
-  <script src="nav.js"></script>
+  
+  <script src="js/luxon.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
