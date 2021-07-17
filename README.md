@@ -8,7 +8,8 @@
 
 > Thi project is about a book library implemented using javascript and html wiht css.
 
-![Demo](./images/screen.png)
+![Demo](https://user-images.githubusercontent.com/54015740/126026600-6a64f683-f08f-436c-b5cd-b0b56a7c3d5d.png)
+
 
 ---
 
