@@ -2,7 +2,8 @@
 ---
 
 # Project Name
-Awsome Books library
+---
+## Awesome Books library
 ---
 
 > Thi project is about a book library implemented using javascript and html wiht css.
@@ -56,6 +57,8 @@ GitHub: [@Munsa1](https://github.com/munsa1)
 
 👤 **Author2**
 
+👤 **Sheyla Pozo**
+
  Github:[@SheylaPozo](https://github.com/sheylaPozo)
 - Linkedin: [Sheyla Pozo](https://www.linkedin.com/in/sheypozo/)
 - Twitter: [Sheyla Pozo](https://twitter.com/sheyPozo)
@@ -75,5 +78,9 @@ Give a ⭐️ if you like this project!
 - Hat tip to Usman Sulieman
 - Inspiration
 - etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
 
 
