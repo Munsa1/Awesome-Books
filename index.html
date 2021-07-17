@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Awesome Books</title>
-  <link href="./Assets/style.css" rel="stylesheet">
-  <link href="./Assets/reset.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+  <header>
+    <nav class="navbar">
+      <a class="navbar-brand" href="/"> Awesome Books </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#list">List</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#new">Add new</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <ul id="Result">
-    </ul>
-    <h1>Awesome Books</h1>
-    <form id="booksForm">
-      <input type="text" id="bookTitle" placeholder="Title" />
-      <br><br>
-      <input type="text" id="bookAuthor" placeholder="Author" />
-      <br>
-      <br>
-      <button type="submit" id="submit">
-      Save Book
-      </button>
-    </form>
+    <div class="date-container">
+      <p id="date"></p>
+    </div>
+    <section id="list" class="container current-page">
+      <h1 class="text-center">All awesome books</h1>
+      <ul id="books"></ul>
+    </section>
+    <section id="new" class="container page">
+      <h2 class="text-center">Add a new book</h2>
+      <form id="book-entry">
+        <input type="text" placeholder="Title" required />
+        <input type="text" placeholder="Author" required />
+        <div class="justify-right">
+          <button class="button" type="submit">Add</button>
+        </div>
+      </form>
+    </section>
+    <section class="container contact" id="contact">
+      <h1>Contact information</h1>
+      <p>Do you have any question or you just want to say "Hello"?<br /> You can reach out to us</p>
+      <ul>
+        <li>Our e-mail mail@mail.com</li>
+        <li>Our phone number: 0043586534422</li>
+        <li>Our address: Streetname 22, 84503 City, Country</li>
+      </ul>
+    </section>
   </main>
+  <footer>
+    <small>Copyright 2021</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
   <script src="index.js"></script>
+  <script src="navigation.js"></script>
 </body>
 </html>
