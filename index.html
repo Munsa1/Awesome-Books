@@ -1,6 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome books</title>
+  <link rel="icon" href="book.jpg" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navigation">
+      <span class="logo">Awesome books</span>
+      <ul class="menu" id="menu">
+        <li data-id="list" class="active">List</li>
+        <li data-id="add-new" >Add new</li>
+        <li data-id="contact">Contact</li>
+      </ul>
+   </nav>
+   <div class="date" id="date"></div>
+</header>
+  <section class="list show" id="list">
+    <h2>All awesome books</h2>
+      <ul class='books' id='books'>
+      </ul>
+  </section>
+
+  <section id="add-new" class="add-new">
+    <h2>Add a new book</h2>
+    <form id="add-form" class="add-form">
+      <input type="text" name="title" id="title" placeholder="Title" autocomplete="off" required>
+      <input type="text" name="author" id="author" placeholder="Author" autocomplete="off" required>
+      <button type="submit">Add</button>
+      <span class='error-msg' id='error-msg'></span>
+    </form>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact information</h2>
+    <p>Do you have any questions or you just want to say "Hello"?</p>
+    <p>You can reach out to us!</p>
+    <ul>
+      <li>Our email: <a href="mailto:support@awesomebooks.com">support@awesomebooks.com</a></li>
+      <li>Our phone number: <a href="tel:0013586534422">0013586534422</a></li>
+      <li>Our address: Wall Street 77, 84503 New York, USA</li>
+    </ul>
+  </section>
+  
+  
+  <footer class="footer">
+    &copy; 2021 <a href="https://github.com/toliboff">toliboff</a>
+  </footer>
+  
+  <script src="js/luxon.js"></script>
+  <script src="js/script.js"></script>
+=======
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,5 +115,6 @@
   <script src="https://cdn.jsdelivr.net/npm/luxon@1.27.0/build/global/luxon.min.js"></script>
   <script src="index.js"></script>
   <script src="navigation.js"></script>
+>>>>>>> 5e80a42707f139bea3a8455a7878a9f62931b85b
 </body>
 </html>
